@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma bibliothèque</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Ma bibliothèque</a></h1>
+    </header>
+    <main>
+        <menu class="mainPageMenu">
+            <form class="order">
+                <span>Trier par :</span>
+                <input type="radio" id="title" name="title" value="title">
+                <label for="title">Titre</label>
+                <input type="radio" id="author" name="author" value="author">
+                <label for="author">Auteur</label>
+                <input type="radio" id="genre" name="genre" value="genre">
+                <label for="genre">Genre</label>
+            </form>
+            <a href="addBook.html" title="Ajouter un livre"><button class="add">Ajouter un livre</button></a>
+        </menu>
+        <section class="cards">
+            <article class="card">
+                <figure class="cardImg">
+                    <img src="img/books/prieure.jpg" alt="couverture Le Prieuré de l'Oranger">
+                </figure>
+                <figure class="cardInfos">
+                    <h2>Le Prieuré de l'Oranger</h2>
+                    <h3>Samantha Shannon</h3>
+                    <h4>Fantasy</h4>
+                    <a href="details.html" title="voir détails"><button class="more">+ d'infos</button></a>
+                </figure>
+            </article>
+            <article class="card">
+                <figure class="cardImg">
+                    <img src="img/books/achille.jpg" alt="couverture Le Chant d'Achille">
+                </figure>
+                <figure class="cardInfos">
+                    <h2>Le Chant d'Achille</h2>
+                    <h3>Madeline Miller</h3>
+                    <h4>Romance</h4>
+                    <a href="#" title="voir détails"><button class="more">+ d'infos</button></a>
+                </figure>
+            </article>
+            <article class="card">
+                <figure class="cardImg">
+                    <img src="img/books/ecarlate.jpg" alt="couverture La Servante Ecarlate">
+                </figure>
+                <figure class="cardInfos">
+                    <h2>La Servante Ecarlate</h2>
+                    <h3>Margaret Atwood</h3>
+                    <h4>Dystopie</h4>
+                    <a href="#" title="voir détails"><button class="more">+ d'infos</button></a>
+                </figure>
+            </article>
+            <article class="card">
+                <figure class="cardImg">
+                    <img src="img/books/cirque.jpg" alt="couverture Le Cirque des Rêves">
+                </figure>
+                <figure class="cardInfos">
+                    <h2>Le Cirque des Rêves</h2>
+                    <h3>Erin Morgenstern</h3>
+                    <h4>Fantasy</h4>
+                    <a href="#" title="voir détails"><button class="more">+ d'infos</button></a>
+                </figure>
+            </article>
+            <article class="card">
+                <figure class="cardImg">
+                    <img src="img/books/orgueil.jpg" alt="couverture Orgueil et Préjugés">
+                </figure>
+                <figure class="cardInfos">
+                    <h2>Orgueil et Préjugés</h2>
+                    <h3>Jane Austen</h3>
+                    <h4>Romance</h4>
+                    <a href="#" title="voir détails"><button class="more">+ d'infos</button></a>
+                </figure>
+            </article>
+            <article class="card">
+                <figure class="cardImg">
+                    <img src="img/books/otori.jpg" alt="couverture Le Clan des Otori">
+                </figure>
+                <figure class="cardInfos">
+                    <h2>Le Clan des Otori</h2>
+                    <h3>Lian Hearn</h3>
+                    <h4>Fantasy</h4>
+                    <a href="#" title="voir détails"><button class="more">+ d'infos</button></a>
+                </figure>
+            </article>
+        </section>
+    </main>  
+</body>
+</html>

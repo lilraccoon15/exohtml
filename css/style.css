@@ -1,0 +1,347 @@
+body {
+    background-image: url("../img/backgrounds/backgroundMobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    text-align:center;
+}
+
+main {
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+figure {
+    margin:0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--black);
+}
+
+h2 {
+    font-size:1.3em;
+}
+
+h3 {
+    font-size:1.1em
+}
+
+h4 {
+    font-size: 1em;
+    font-style:italic;
+}
+
+:root {
+    /*******COULEURS******/
+    --color-yellow: #e4d38f;
+    --color-green: #D1EE9E;
+    --color-pink: #FFBCD9;
+    --black: black;
+}
+
+/**************PAGE PRINCIPALE*************/
+
+.order:hover {
+    cursor: pointer;
+}
+
+.cards {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width:100%;
+    background-color:rgb(255, 255, 255, 0.5);
+    display:flex;
+    padding:5%;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--color-yellow), transparent) 1;
+    margin-top:20px;
+}
+
+.cardImg {
+    width:20%;
+    /* padding-top:10%; */
+}
+
+.cardImg img {
+    max-width:100%;
+}
+
+.cardInfos {
+    width:70%;
+}
+
+.more {
+    background: linear-gradient(to right, var(--color-green), var(--color-pink)) ;
+    border:none;
+    border-radius:5px;
+    padding:2% 5%;
+    transition: background 0.2s;
+}
+
+.more:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, var(--color-pink), var(--color-green)) ;
+    transition: background 0.6s;
+}
+
+.add {
+    margin-top:20px;
+    background: linear-gradient(to right, var(--color-green), var(--color-pink)) ;
+    border:none;
+    border-radius:5px;
+    padding:1% 3%;
+    transition: background 0.2s;
+}
+
+.add:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, var(--color-pink), var(--color-green)) ;
+    transition: background 0.6s;
+}
+
+/**************PAGE DETAILS*************/
+
+.details {
+    background-color:rgb(255, 255, 255, 0.5);
+    padding:5%;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--color-yellow), transparent) 1;
+    margin-top:20px;
+}
+
+.mainInfos {
+    display:flex;
+    justify-content: space-between;
+}
+
+.detailsImg {
+    width: 25%;
+}
+
+.detailsImg img {
+    max-width:100%;
+}
+
+.infosImg {
+    width:70%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.infosImg > *{
+    width:100%;
+}
+
+.recoList {
+    display:flex;
+    justify-content: space-between;
+}
+
+.recoList > * {
+    width:20%;
+}
+
+.recoList > * img {
+    max-width:100%;
+}
+
+/**************PAGE FORMULAIRE*************/
+
+.pageForm{
+    background-color:rgb(255, 255, 255, 0.5);
+    padding:5%;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--color-yellow), transparent) 1;
+    margin-top:20px;
+}
+
+.pageForm form {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#bookTitle, #bookAuthor, #bookGenre, #bookResume, #titleLabel, #authorLabel, #genreLabel, #resumeLabel, #coverLabel {
+    width:100%;
+}
+
+#bookTitle, #bookAuthor, #bookGenre, #bookResume {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--color-yellow), transparent) 1;
+    margin-bottom:20px;
+}
+
+#bookCover {
+    margin-bottom:40px;
+}
+
+.formButtons {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+.formButtons > * {
+    background: linear-gradient(to right, var(--color-green), var(--color-pink)) ;
+    border:none;
+    border-radius:5px;
+    padding:2% 5%;
+    transition: background 0.2s;
+}
+
+.formButtons > *:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, var(--color-pink), var(--color-green)) ;
+    transition: background 0.6s;
+}
+
+
+@media screen and (min-width:700px){
+
+    /**************PAGE PRINCIPALE*************/
+
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        width:37%;
+        padding:4%;
+    }
+
+    .cardImg {
+        width:30%;
+    }
+    
+    .cardInfos {
+        width:60%;
+    }
+
+    .mainPageMenu {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .mainPageMenu > * {
+        width:50%;
+    }
+
+    .mainPageMenu a {
+        text-align:right;
+    }
+
+    .add {
+        margin-top:0px;
+    }
+
+    /**************PAGE DETAILS*************/
+
+    .details h2 {
+        font-size:1.5em;
+    }
+
+    .details h3 {
+        font-size:1.3em;
+    }
+
+    .details h4 {
+        font-size:1.1em;
+    }
+    
+}
+
+@media screen and (min-width:800px){
+
+    /**************PAGE DETAILS*************/
+
+    .details h2 {
+        font-size:1.7em;
+    }
+
+    .details h3 {
+        font-size:1.5em;
+    }
+
+    .details h4 {
+        font-size:1.3em;
+    }
+
+    /**************PAGE FORMULAIRE*************/
+
+    .pageForm{
+        padding:5% 10%;
+    }
+    
+}
+
+@media screen and (min-width:900px){
+
+    /**************PAGE DETAILS*************/
+
+    .reco {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .reco > * {
+        width:45%;
+    }
+
+    .details h2 {
+        font-size:2em;
+    }
+
+    .details h3 {
+        font-size:1.7em;
+    }
+
+    .details h4 {
+        font-size:1.5em;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    /**************PAGE PRINCIPALE*************/
+
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        width:25%;
+        padding:3%;
+    }
+
+    .cardImg {
+        width:30%;
+    }
+    
+    .cardInfos {
+        width:60%;
+    }
+
+    /**************PAGE FORMULAIRE*************/
+
+    .pageForm{
+        padding:5% 15%;
+    }
+}

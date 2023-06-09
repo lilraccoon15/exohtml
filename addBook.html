@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma bibliothèque</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Ma bibliothèque</h1></a>
+    </header>
+    <main>
+        <section class="pageForm">
+            <form class="addForm">
+                <h2>Ajouter un livre à ma bibliothèque</h2>
+                <label for="title" id="titleLabel">Titre :</label>
+                <input type="text" id="bookTitle" name="title" placeholder="Titre du livre" required>
+
+                <label for="author" id="authorLabel">Auteur :</label>
+                <input type="text" id="bookAuthor" name="author" placeholder="Auteur du livre" required>
+                
+                <label for="genre" id="genreLabel">Genre :</label>
+                <input type="text" id="bookGenre" name="genre" placeholder="Genre littéraire" required>
+
+                <label for="resume" id="resumeLabel">Résumé :</label>
+                <textarea id="bookResume" name="resume"rows="20" required>Résumé du livre</textarea>
+
+                <label for="couverture" id="coverLabel">Couverture :</label>
+                <input type="file" id="bookCover" name="cover" accept="image/png, image/jpeg" required>
+
+                <div class="formButtons">
+                    <button type="submit">Ajouter</button>
+                    <button type="reset">Annuler</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
